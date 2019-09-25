@@ -34,6 +34,9 @@ public class Toast {
     }
 
     public static void show(final CharSequence msg, final int length) {
+        if (mContext == null) {
+            throw new IllegalStateException("请在application中调用init方法初始toast类");
+        }
         show(new Runnable() {
             @Override
             public void run() {
