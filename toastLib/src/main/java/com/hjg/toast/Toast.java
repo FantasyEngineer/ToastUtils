@@ -35,7 +35,7 @@ public class Toast {
 
     public static void show(final CharSequence msg, final int length) {
         if (mContext == null) {
-            throw new IllegalStateException("请在application中调用init方法初始toast类");
+            throw new IllegalStateException("pls use init() in Applicaiton class");
         }
         show(new Runnable() {
             @Override
@@ -49,7 +49,7 @@ public class Toast {
 
     public static void show(final int resId, final int length) {
         if (mContext == null) {
-            throw new IllegalStateException("请在application中调用init方法初始toast类");
+            throw new IllegalStateException("pls use init() in Applicaiton class");
         }
         show(new Runnable() {
             @Override
