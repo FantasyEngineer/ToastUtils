@@ -14,8 +14,8 @@ import android.widget.TextView;
  *
  * @author zrh
  */
-public class Toast {
-    // Toast
+public class D {
+    // D
     private static android.widget.Toast toast;
     private static Context mContext;
     private static Handler handler;
