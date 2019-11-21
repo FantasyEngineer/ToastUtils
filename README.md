@@ -15,8 +15,8 @@ Step 1.Add it in your root build.gradle at the end of repositories:<br>
 	}
 ```
 ### 代码使用<br> 
-在application的oncreat中调用初始化。
 ```Java
+      //在application的oncreat中调用初始化。
       D.init(this);
       //之后的每次使用
       D.showShort("不能为空");
